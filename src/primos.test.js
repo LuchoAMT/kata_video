@@ -5,5 +5,11 @@ describe("Numeros primos", () => {
     expect(FactoresPrimos.generar(1)).toEqual([]);
   });
 
-  
+  it("Debe devolver 2 cuando se le pasa 2", () => {
+    expect(FactoresPrimos.generar(2)).toEqual([2]);
+  });
+
+  it("Debe devolver 3 cuando se le pasa 3", () => {
+    expect(FactoresPrimos.generar(3)).toEqual([3]);
+  });
 });
