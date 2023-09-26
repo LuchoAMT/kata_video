@@ -1,13 +1,10 @@
 class FactoresPrimos{
     static generar(n){
         let primos = [];
-        let candidato = 2;
-        while(n > 1){
-            while(n%candidato === 0){
-                primos.push(candidato);
-                n /= candidato;
+        for(let candidato = 2; n > 1; candidato++){
+            for(; n%candidato === 0; n /= candidato){
+                primos.push(candidato);;
             }
-            candidato++;
         }
         return primos;
     }
