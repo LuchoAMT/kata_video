@@ -9,9 +9,6 @@ class FactoresPrimos{
             }
             candidato++;
         }
-        if(n > 1){
-            primos.push(n);
-        }
         return primos;
     }
 }
