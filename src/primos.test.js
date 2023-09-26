@@ -26,6 +26,6 @@ describe("Numeros primos", () => {
   });
 
   it("Debe devolver 3,3 cuando se le pasa 9", () => {
-    expect(FactoresPrimos.generar(8)).toEqual([3,3]);
+    expect(FactoresPrimos.generar(9)).toEqual([3,3]);
   });
 });
